@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "ameblo-iine",
+    "description": "This extension enables 'iine!' on ameba blog",
+    "version": "1.0.1",
+    "content_scripts": [
+        {
+            "matches": ["http://ameblo.jp/*"],
+            "js": ["zepto.min.js", "iine.js"]
+        },
+        {
+            "matches": ["http://iine.blog.ameba.jp/*"],
+            "js": ["mouse2touch.js"],
+            "all_frames": true
+        }
+    ]
+}
